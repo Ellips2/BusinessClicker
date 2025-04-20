@@ -1,8 +1,7 @@
-using Data;
 using TMPro;
 using UnityEngine;
 
-namespace UnityComponents
+namespace UI.UpgradeButton
 {
     internal class UpgradeView : MonoBehaviour
     {

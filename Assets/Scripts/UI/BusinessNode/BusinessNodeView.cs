@@ -1,11 +1,11 @@
-using StaticData;
+using BusinessNode;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace UnityComponents
+namespace UI.BusinessNode
 {
-    public class BusinessNode : MonoBehaviour
+    public class BusinessNodeView : MonoBehaviour
     {
         public BusinessTypeId Id;
 

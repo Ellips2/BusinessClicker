@@ -1,4 +1,4 @@
-namespace StaticData
+namespace BusinessNode
 {
     public enum BusinessTypeId
     {

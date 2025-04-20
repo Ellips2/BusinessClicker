@@ -1,4 +1,4 @@
-namespace Data
+namespace UI.UpgradeButton
 {
     public enum UpgradeId
     {
