@@ -204,14 +204,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7505442569340804356, guid: 3e41b8eddfead7543977ad95ece36cae, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7505442569340804356, guid: 3e41b8eddfead7543977ad95ece36cae, type: 3}
-      propertyPath: _widgetName
-      value: OnLevelUpButtonClick
-      objectReference: {fileID: 0}
     - target: {fileID: 7589173255437325692, guid: 3e41b8eddfead7543977ad95ece36cae, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
