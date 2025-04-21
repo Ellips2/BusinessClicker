@@ -5,7 +5,7 @@ namespace UI
 {
     public class UiRoot
     {
-        public RuleTile.TilingRuleOutput.Transform businessNodeContainer;
+        public Transform businessNodeContainer;
         public GameObject scorePanel;
         public EcsUguiEmitter uiEmitter;
 

@@ -1,5 +1,5 @@
 using System;
-using Business;
+using UI.Business;
 
 namespace UI.UpgradeButton
 {

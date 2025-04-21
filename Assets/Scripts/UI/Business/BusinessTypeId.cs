@@ -1,4 +1,4 @@
-namespace Business
+namespace UI.Business
 {
     public enum BusinessTypeId
     {

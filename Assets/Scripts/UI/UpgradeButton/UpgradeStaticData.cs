@@ -1,4 +1,4 @@
-using Business;
+using UI.Business;
 using UnityEngine;
 
 namespace UI.UpgradeButton

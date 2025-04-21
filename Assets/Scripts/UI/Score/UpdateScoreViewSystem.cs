@@ -1,5 +1,6 @@
 using Leopotam.EcsLite;
-using Services;
+using GameWorld;
+using UI;
 using UI.Markers;
 
 namespace UI.Score

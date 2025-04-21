@@ -1,4 +1,4 @@
-using Business;
+using UI.Business;
 
 namespace UI.LevelUpButton
 {

@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using Leopotam.EcsLite;
-using Services;
+using GameWorld;
+using UI;
 using UI.Markers;
 using UI.Score;
 
@@ -41,7 +42,7 @@ namespace UI.UpgradeButton
                 foreach (var upgradeView in _upgradeViewList)
                     if (upgradeView.Id == upgrade.Id)
                     {
-                        // upgradeView.IncomeTransform.gameObject.SetActive(false);
+                        upgradeView.IncomeTransform.gameObject.SetActive(false);
                         upgradeView.PriceTransform.gameObject.SetActive(false);
                         upgradeView.SoldoutLabel.gameObject.SetActive(true);
                     }

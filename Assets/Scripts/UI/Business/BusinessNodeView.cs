@@ -1,4 +1,3 @@
-using Business;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,7 +19,7 @@ namespace UI.Business
         public TextMeshProUGUI LevelUpPriceLabel;
         public TextMeshProUGUI LevelUpPriceValue;
 
-        public RuleTile.TilingRuleOutput.Transform UpgradeRoot;
+        public Transform UpgradeRoot;
         public Transform LevelUpButton;
         public Slider Slider;
     }

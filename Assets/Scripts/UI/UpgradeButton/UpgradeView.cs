@@ -8,7 +8,7 @@ namespace UI.UpgradeButton
         public UpgradeId Id;
         public TextMeshProUGUI Name;
 
-        public RuleTile.TilingRuleOutput.Transform IncomeTransform;
+        public Transform IncomeTransform;
         public TextMeshProUGUI IncomeLabel;
         public TextMeshProUGUI IncomeValue;
 

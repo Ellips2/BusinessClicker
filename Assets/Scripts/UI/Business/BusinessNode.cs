@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Business;
 using Leopotam.EcsLite;
 
 namespace UI.Business
