@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using Leopotam.EcsLite;
-using UI;
 using UI.Markers;
 using UI.Score;
 
@@ -26,7 +25,7 @@ namespace UI.Business
         {
             _filter = _world.Filter<BusinessNode>().Inc<UpdateComponentViewEvent>().End();
             _businessNodePool = _world.GetPool<BusinessNode>();
-            _businessNodeViewList = _uiRoot.scorePanel.GetComponentsInChildren<BusinessNodeView>().ToList();
+            _businessNodeViewList = _uiRoot.GetComponentsInChildren<BusinessNodeView>().ToList();
         }
 
         public void Run(IEcsSystems systems)

@@ -58,7 +58,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094344363347072429, guid: 3e41b8eddfead7543977ad95ece36cae, type: 3}
       propertyPath: m_Name
-      value: LevelUpButton
+      value: LevelUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1094344363347072429, guid: 3e41b8eddfead7543977ad95ece36cae, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2093356787821957021, guid: 3e41b8eddfead7543977ad95ece36cae, type: 3}
       propertyPath: m_Pivot.x
@@ -200,6 +204,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7505442569340804356, guid: 3e41b8eddfead7543977ad95ece36cae, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7505442569340804356, guid: 3e41b8eddfead7543977ad95ece36cae, type: 3}
+      propertyPath: _widgetName
+      value: OnLevelUpButtonClick
+      objectReference: {fileID: 0}
     - target: {fileID: 7589173255437325692, guid: 3e41b8eddfead7543977ad95ece36cae, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -321,4 +333,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22d48d3f070249c493399a37a14a536d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BusinessNode: {fileID: 0}
+  BusinessNodeView: {fileID: 0}

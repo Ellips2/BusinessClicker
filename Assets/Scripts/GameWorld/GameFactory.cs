@@ -65,7 +65,6 @@ namespace GameWorld
 
             var prefab = Resources.Load(AssetPath.BusinessNode);
             var businessNodeObj = (GameObject) Object.Instantiate(prefab, _uiRoot.businessNodeContainer);
-
             var businessNodeView = businessNodeObj.GetComponent<BusinessNodeView>();
 
             businessNodeView.Name.text = businessStaticData.Name;
@@ -77,7 +76,7 @@ namespace GameWorld
             businessNodeView.LevelValue.text = businessNode.Level.ToString();
             businessNodeView.IncomeValue.text = businessNode.Income.ToString();
             businessNodeView.LevelUpPriceValue.text = businessNode.LevelUpPrice.ToString();
-
+            
             CreateUpgrades(businessNodeFromSave, businessNodeView, ref businessNode);
 
             var incomeTimer = _world.GetPool<IncomeTimer>().Add(entity);
@@ -110,7 +109,6 @@ namespace GameWorld
 
             var prefab = Resources.Load(AssetPath.Upgrade);
             var upgradeObj = (GameObject) Object.Instantiate(prefab, businessNodeView.UpgradeRoot);
-
             var upgradeView = upgradeObj.GetComponent<UpgradeView>();
 
             upgradeView.Id = upgradeFromSave.Id;

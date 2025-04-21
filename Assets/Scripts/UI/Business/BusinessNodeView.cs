@@ -20,7 +20,6 @@ namespace UI.Business
         public TextMeshProUGUI LevelUpPriceValue;
 
         public Transform UpgradeRoot;
-        public Transform LevelUpButton;
         public Slider Slider;
     }
 }

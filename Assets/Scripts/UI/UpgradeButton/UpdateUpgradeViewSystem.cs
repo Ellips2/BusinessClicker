@@ -29,7 +29,7 @@ namespace UI.UpgradeButton
         {
             _filter = _world.Filter<Upgrade>().Inc<Unlocked>().End();
             _balanceView = _uiRoot.scorePanel.GetComponentInChildren<ScoreView>();
-            _upgradeViewList = _uiRoot.scorePanel.GetComponentsInChildren<UpgradeView>().ToList();
+            _upgradeViewList = _uiRoot.GetComponentsInChildren<UpgradeView>().ToList();
             _upgradePool = _world.GetPool<Upgrade>();
         }
 

@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094344363347072429, guid: 3e41b8eddfead7543977ad95ece36cae, type: 3}
       propertyPath: m_Name
-      value: UpgradeButton
+      value: Upgrade
       objectReference: {fileID: 0}
     - target: {fileID: 2093356787821957021, guid: 3e41b8eddfead7543977ad95ece36cae, type: 3}
       propertyPath: m_Pivot.x
@@ -272,6 +272,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: IncomeText
       objectReference: {fileID: 0}
+    - target: {fileID: 7505442569340804356, guid: 3e41b8eddfead7543977ad95ece36cae, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7505442569340804356, guid: 3e41b8eddfead7543977ad95ece36cae, type: 3}
+      propertyPath: _widgetName
+      value: OnUpgradeButtonClick
+      objectReference: {fileID: 0}
     - target: {fileID: 7589173255437325692, guid: 3e41b8eddfead7543977ad95ece36cae, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -399,10 +407,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 0
   Name: {fileID: 7083043091696299894}
-  IncomeTransform: 0
+  IncomeTransform: {fileID: 7164380653310637884}
   IncomeLabel: {fileID: 4828447460863147260}
   IncomeValue: {fileID: 3570950093967972998}
-  PriceTransform: {fileID: 8322290175072781489}
+  PriceTransform: {fileID: 7803820374023483879}
   PriceLabel: {fileID: 5486039742736808487}
   PriceValue: {fileID: 4516779776408099933}
   SoldoutLabel: {fileID: 1071324875784113939}
@@ -472,8 +480,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &8322290175072781489 stripped
+--- !u!224 &7164380653310637884 stripped
 RectTransform:
-  m_CorrespondingSourceObject: {fileID: 9146045407959218643, guid: 3e41b8eddfead7543977ad95ece36cae, type: 3}
+  m_CorrespondingSourceObject: {fileID: 7998128213600324190, guid: 3e41b8eddfead7543977ad95ece36cae, type: 3}
+  m_PrefabInstance: {fileID: 978390548315356514}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &7803820374023483879 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7052439438291340421, guid: 3e41b8eddfead7543977ad95ece36cae, type: 3}
   m_PrefabInstance: {fileID: 978390548315356514}
   m_PrefabAsset: {fileID: 0}
