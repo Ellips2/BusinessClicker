@@ -1,11 +1,11 @@
 using TMPro;
 using UnityEngine;
 
-namespace UnityComponents
+namespace UI.Score
 {
     internal class ScoreView : MonoBehaviour
     {
-        public TextMeshProUGUI BalanceLabel;
+        public TextMeshProUGUI ScoreLabel;
         public TextMeshProUGUI Value;
     }
 }

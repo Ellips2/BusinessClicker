@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace UI.UpgradeButton
 {
-    [CreateAssetMenu(fileName = "PowerUpStaticData", menuName = "Static Data/Power Up")]
+    [CreateAssetMenu(fileName = "UpgradeStaticData", menuName = "Static Data/Upgrade")]
     public class UpgradeStaticData : ScriptableObject
     {
         public UpgradeId Id;
