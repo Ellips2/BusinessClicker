@@ -1,0 +1,20 @@
+using UI.Business;
+using UnityEngine;
+
+namespace UI.UpgradeButton
+{
+    [CreateAssetMenu(fileName = "UpgradeStaticData", menuName = "Static Data/Upgrade")]
+    public class UpgradeStaticData : ScriptableObject
+    {
+        public UpgradeId Id;
+        public BusinessTypeId BusinessId;
+        public string Name;
+
+        public string IncomeLabel = "Income";
+        public string PriceLabel = "Price";
+        public string SoldoutLabel = "Bought";
+
+        public int IncomeMultiplierPercent;
+        public int Price;
+    }
+}
