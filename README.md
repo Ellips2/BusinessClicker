@@ -1,5 +1,8 @@
 # BusinessClicker
-<img src="Screenshot.png" width="226" height="400">
+<p align="center">
+  <img src="Screenshot.png" width="254" height="450">
+</p>
+
 Кликер, в котором игрок покупает и улучшает бизнесы, генерирующие доход. 
 
 В коде использован фреймворк LeoEcsLite.
