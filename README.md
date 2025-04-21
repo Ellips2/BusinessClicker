@@ -1,6 +1,5 @@
 # BusinessClicker
-![Screenshot_20230828_060235](https://github.com/user-attachments/assets/db42973d-39b8-43cb-9c8b-68dd905a075e)
-
+<img src="[http://url.to/image.png](https://github.com/user-attachments/assets/db42973d-39b8-43cb-9c8b-68dd905a075e)" width="300" height="800">
 Кликер, в котором игрок покупает и улучшает бизнесы, генерирующие доход. 
 
 В коде использован фреймворк LeoEcsLite.
