@@ -5,6 +5,6 @@ namespace UI.LevelUpButton
 {
     public class LevelUpView : MonoBehaviour
     {
-        public BusinessNodeView businessNodeView;
+        public BusinessNodeView BusinessNodeView;
     }
 }
