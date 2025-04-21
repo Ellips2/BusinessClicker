@@ -1,4 +1,4 @@
-namespace BusinessNode
+namespace Business
 {
     public enum BusinessTypeId
     {

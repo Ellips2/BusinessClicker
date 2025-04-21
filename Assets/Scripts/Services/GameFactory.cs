@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Leopotam.EcsLite;
 using UI;
-using UI.BusinessNode;
+using UI.Business;
 using UI.Markers;
 using UI.Score;
 using UI.UpgradeButton;
@@ -48,7 +48,7 @@ namespace Services
         private void CreateBusinessNode(BusinessNodeData businessNodeFromSave)
         {
             var entity = _world.NewEntity();
-            ref var businessNode = ref _world.GetPool<UI.BusinessNode.BusinessNode>().Add(entity);
+            ref var businessNode = ref _world.GetPool<BusinessNode>().Add(entity);
 
             var businessStaticData = _staticDataService.ForBusiness(businessNodeFromSave.Id);
 
@@ -82,7 +82,7 @@ namespace Services
         }
 
         private void CreateUpgrades(BusinessNodeData businessNodeFromSave, BusinessNodeView businessNodeView,
-            ref UI.BusinessNode.BusinessNode businessNode)
+            ref BusinessNode businessNode)
         {
             var upgrades = businessNodeFromSave.Upgrades;
             
@@ -91,7 +91,7 @@ namespace Services
         }
 
         private void CreateUpgrade(BusinessNodeView businessNodeView, UpgradeData upgradeFromSave,
-            ref UI.BusinessNode.BusinessNode businessNode)
+            ref BusinessNode businessNode)
         {
             var entity = _world.NewEntity();
             ref var upgrade = ref _world.GetPool<Upgrade>().Add(entity);

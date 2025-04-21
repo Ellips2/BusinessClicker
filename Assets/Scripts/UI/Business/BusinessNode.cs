@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using BusinessNode;
+using Business;
 using Leopotam.EcsLite;
 
-namespace UI.BusinessNode
+namespace UI.Business
 {
     public struct BusinessNode
     {

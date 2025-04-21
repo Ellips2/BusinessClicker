@@ -1,4 +1,4 @@
-using BusinessNode;
+using Business;
 
 namespace UI.UpgradeButton
 {

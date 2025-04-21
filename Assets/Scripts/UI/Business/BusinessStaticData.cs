@@ -1,7 +1,7 @@
-using BusinessNode;
+using Business;
 using UnityEngine;
 
-namespace UI.BusinessNode
+namespace UI.Business
 {
     [CreateAssetMenu(fileName = "BusinessStaticData", menuName = "Static Data/Business")]
     public class BusinessStaticData : ScriptableObject

@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using UI.BusinessNode;
+using UI.Business;
 using UI.Score;
 
 namespace UI

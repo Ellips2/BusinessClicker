@@ -1,9 +1,9 @@
-using BusinessNode;
+using Business;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace UI.BusinessNode
+namespace UI.Business
 {
     public class BusinessNodeView : MonoBehaviour
     {

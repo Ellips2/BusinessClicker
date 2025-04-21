@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using BusinessNode;
+using Business;
 using UI.UpgradeButton;
 
-namespace UI.BusinessNode
+namespace UI.Business
 {
     [Serializable]
     public class BusinessNodeData

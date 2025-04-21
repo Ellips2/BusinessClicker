@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using BusinessNode;
-using UI.BusinessNode;
+using Business;
+using UI.Business;
 using UI.Score;
 using UI.UpgradeButton;
 
