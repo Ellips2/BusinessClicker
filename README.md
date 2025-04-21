@@ -1,5 +1,5 @@
 # BusinessClicker
-![image](https://github.com/user-attachments/assets/db42973d-39b8-43cb-9c8b-68dd905a075e)
+![Screenshot_20230828_060235](https://github.com/user-attachments/assets/db42973d-39b8-43cb-9c8b-68dd905a075e)
 
 Кликер, в котором игрок покупает и улучшает бизнесы, генерирующие доход. 
 
