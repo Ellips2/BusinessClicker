@@ -1,6 +1,6 @@
 using UI.Score;
 
-namespace Services
+namespace GameWorld
 {
     public interface IGameFactory
     {

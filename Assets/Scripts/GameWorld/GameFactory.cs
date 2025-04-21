@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Income;
 using Leopotam.EcsLite;
+using SaveLoad;
 using UI;
 using UI.Business;
 using UI.Markers;
@@ -8,7 +9,7 @@ using UI.Score;
 using UI.UpgradeButton;
 using UnityEngine;
 
-namespace Services
+namespace GameWorld
 {
     internal class GameFactory : IGameFactory
     {
@@ -62,7 +63,8 @@ namespace Services
 
             businessNode.IncomeDelay = businessStaticData.IncomeDelay;
 
-            var businessNodeObj = new GameObject("node");
+            var prefab = Resources.Load(AssetPath.BusinessNode);
+            var businessNodeObj = (GameObject) Object.Instantiate(prefab, _uiRoot.businessNodeContainer);
 
             var businessNodeView = businessNodeObj.GetComponent<BusinessNodeView>();
 
@@ -106,7 +108,8 @@ namespace Services
             upgrade.Price = upgradeStaticData.Price;
             upgrade.IncomeMultiplierPercent = upgradeStaticData.IncomeMultiplierPercent;
 
-            var upgradeObj = new GameObject("upgrade");
+            var prefab = Resources.Load(AssetPath.Upgrade);
+            var upgradeObj = (GameObject) Object.Instantiate(prefab, businessNodeView.UpgradeRoot);
 
             var upgradeView = upgradeObj.GetComponent<UpgradeView>();
 

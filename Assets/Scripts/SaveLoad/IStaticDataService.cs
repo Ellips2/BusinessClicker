@@ -1,15 +1,14 @@
 using System.Collections.Generic;
-using Business;
 using UI.Business;
 using UI.Score;
 using UI.UpgradeButton;
 
-namespace Services
+namespace SaveLoad
 {
     public interface IStaticDataService
     {
         void Load();
-        BusinessStaticData ForBusiness(BusinessTypeId businessCardId);
+        BusinessStaticData ForBusiness(BusinessTypeId businessNodeId);
         ScoreStaticData ForScore();
         UpgradeStaticData ForUpgrade(UpgradeId upgradeId);
         List<UpgradeStaticData> ForUpgrades(BusinessTypeId businessTypeId);

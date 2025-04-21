@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UI.Business;
 using UI.Score;
 
-namespace UI
+namespace SaveLoad
 {
     [Serializable]
     public class PlayerProgress
