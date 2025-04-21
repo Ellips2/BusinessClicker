@@ -25,7 +25,7 @@ namespace UI
         {
             _businessNodeFilter = _world.Filter<BusinessNode>().Inc<IncomeTimer>().End();
             _incomeTimerPool = _world.GetPool<IncomeTimer>();
-            _businessNodeViewList = _uiRoot.scorePanel.GetComponentsInChildren<BusinessNodeView>().ToList();
+            _businessNodeViewList = _uiRoot.GetComponentsInChildren<BusinessNodeView>().ToList();
         }
 
         public void Run(IEcsSystems systems)

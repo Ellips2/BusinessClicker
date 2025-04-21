@@ -160,7 +160,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.254
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 6428124975786682411}
   - component: {fileID: 2380823739688092867}
   m_Layer: 0
-  m_Name: ProgressCanvas
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

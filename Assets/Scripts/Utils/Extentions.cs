@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using Leopotam.EcsLite;
-using GameWorld;
 using SaveLoad;
 using UI.Business;
 using UI.Markers;

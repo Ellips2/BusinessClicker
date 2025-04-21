@@ -9,9 +9,9 @@ namespace SaveLoad
 {
     internal class StaticDataService : IStaticDataService
     {
-        private const string BusinessesPath = "Static Data/Businesses";
-        private const string ScorePath = "Static Data/Score/ScoreStaticData";
-        private const string UpgradesPath = "Static Data/Upgrades";
+        private const string BusinessesPath = "StaticData/Businesses";
+        private const string ScorePath = "StaticData/ScoreStaticData";
+        private const string UpgradesPath = "StaticData/Upgrades";
 
         private Dictionary<BusinessTypeId, BusinessStaticData> _businesses;
         private ScoreStaticData _scoreStaticData;

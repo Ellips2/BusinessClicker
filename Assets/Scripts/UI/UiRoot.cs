@@ -3,7 +3,7 @@ using Leopotam.EcsLite.Unity.Ugui;
 
 namespace UI
 {
-    public class UiRoot
+    public class UiRoot : MonoBehaviour
     {
         public Transform businessNodeContainer;
         public GameObject scorePanel;
