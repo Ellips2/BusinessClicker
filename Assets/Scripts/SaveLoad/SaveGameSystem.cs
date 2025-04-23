@@ -1,10 +1,9 @@
 using System.Collections.Generic;
-using GameWorld;
+using Infrastructure.Factory;
 using Leopotam.EcsLite;
-using UI;
-using UI.Business;
-using UI.Markers;
-using UI.UpgradeButton;
+using Logic.Business;
+using Logic.Markers;
+using Logic.UpgradeButton;
 
 namespace SaveLoad
 {
@@ -90,7 +89,7 @@ namespace SaveLoad
                 ref var upgrade = ref _upgradePool.Get(packedUpgrade);
 
                 var upgradeData = new UpgradeData();
-                upgradeData.Id = upgrade.Id;
+                upgradeData.UpgradeId = upgrade.TypeId;
                 upgradeData.Unlocked = upgrade.Unlocked;
                 upgradeData.BusinessId = upgrade.BusinessId;
 

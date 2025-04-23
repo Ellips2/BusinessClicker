@@ -254,9 +254,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8436027f9c9849e5a2c651c9f5755e96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  businessNodeContainer: {fileID: 1106484550}
-  scorePanel: {fileID: 397034610}
-  uiEmitter: {fileID: 195691461}
+  BusinessNodeContainer: {fileID: 1106484550}
+  ScorePanel: {fileID: 397034610}
+  UiEmitter: {fileID: 195691461}
 --- !u!114 &195691461
 MonoBehaviour:
   m_ObjectHideFlags: 0
