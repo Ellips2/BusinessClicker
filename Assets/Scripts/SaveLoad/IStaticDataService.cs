@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using UI.Business;
-using UI.Score;
-using UI.UpgradeButton;
+using Logic.Business;
+using Logic.Score;
+using Logic.UpgradeButton;
 
 namespace SaveLoad
 {

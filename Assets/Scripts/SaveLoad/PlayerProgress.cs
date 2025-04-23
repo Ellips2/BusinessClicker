@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
-using UI.Business;
-using UI.Score;
+using Logic.Business;
+using Logic.Score;
 
 namespace SaveLoad
 {

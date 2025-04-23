@@ -1,10 +1,9 @@
 using System.Collections.Generic;
-using GameWorld;
+using Infrastructure.Factory;
 using Leopotam.EcsLite;
-using UI;
-using UI.Business;
-using UI.Markers;
-using UI.UpgradeButton;
+using Logic.Business;
+using Logic.Markers;
+using Logic.UpgradeButton;
 
 namespace SaveLoad
 {

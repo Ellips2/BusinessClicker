@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using Leopotam.EcsLite;
+using Logic.Business;
+using Logic.Markers;
+using Logic.Score;
+using Logic.UpgradeButton;
 using SaveLoad;
-using UI.Business;
-using UI.Markers;
-using UI.Score;
-using UI.UpgradeButton;
 
 namespace Utils
 {

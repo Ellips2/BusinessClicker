@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
-using UI.Business;
-using UI.Score;
-using UI.UpgradeButton;
+using Logic.Business;
+using Logic.Score;
+using Logic.UpgradeButton;
 using UnityEngine;
 
 namespace SaveLoad

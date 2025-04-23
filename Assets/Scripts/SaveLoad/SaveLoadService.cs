@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using UI;
-using UI.Business;
-using UI.UpgradeButton;
+using Logic.Business;
+using Logic.UpgradeButton;
 using UnityEngine;
 
 namespace SaveLoad
