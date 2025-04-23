@@ -90,7 +90,7 @@ namespace SaveLoad
                 ref var upgrade = ref _upgradePool.Get(packedUpgrade);
 
                 var upgradeData = new UpgradeData();
-                upgradeData.Id = upgrade.Id;
+                upgradeData.UpgradeId = upgrade.TypeId;
                 upgradeData.Unlocked = upgrade.Unlocked;
                 upgradeData.BusinessId = upgrade.BusinessId;
 

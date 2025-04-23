@@ -1,6 +1,6 @@
 namespace UI.UpgradeButton
 {
-    public enum UpgradeId
+    public enum UpgradeTypeId
     {
         Upgrade_1_1,
         Upgrade_1_2,

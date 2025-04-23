@@ -31,28 +31,26 @@ namespace GameWorld
 
         public void CreateScore()
         {
-            Score = new Score
-            {
-                Value = _progress.ScoreData.Value
-            };
-
-            var scoreView = _uiRoot.scorePanel.GetComponentInChildren<ScoreView>();
-            scoreView.ScoreLabel.text = _staticDataService.ForScore().ScoreLabel;
+            Score = new Score { Value = _progress.ScoreData.Value };
+            var scoreView = _uiRoot.ScorePanel.GetComponentInChildren<ScoreView>();
+            
+            scoreView.ScoreLabel.text = _staticDataService.GetScoreStaticData().ScoreLabel;
             scoreView.Value.text = Score.Value.ToString();
         }
 
         public void CreateBusinessNodes()
         {
             var businessNodes = _progress.BusinessNodes;
-            foreach (var businessNodeFromSave in businessNodes) CreateBusinessNode(businessNodeFromSave);
+            foreach (var businessNodeFromSave in businessNodes) 
+                CreateBusinessNode(businessNodeFromSave);
         }
 
         private void CreateBusinessNode(BusinessNodeData businessNodeFromSave)
         {
             var entity = _world.NewEntity();
             ref var businessNode = ref _world.GetPool<BusinessNode>().Add(entity);
-
-            var businessStaticData = _staticDataService.ForBusiness(businessNodeFromSave.Id);
+            
+            var businessStaticData = _staticDataService.GetBusinessStaticData(businessNodeFromSave.Id);
 
             businessNode.EntityId = entity;
             businessNode.Id = businessNodeFromSave.Id;
@@ -64,7 +62,7 @@ namespace GameWorld
             businessNode.IncomeDelay = businessStaticData.IncomeDelay;
 
             var prefab = Resources.Load(AssetPath.BusinessNode);
-            var businessNodeObj = (GameObject) Object.Instantiate(prefab, _uiRoot.businessNodeContainer);
+            var businessNodeObj = (GameObject) Object.Instantiate(prefab, _uiRoot.BusinessNodeContainer);
             var businessNodeView = businessNodeObj.GetComponent<BusinessNodeView>();
 
             businessNodeView.Name.text = businessStaticData.Name;
@@ -97,10 +95,10 @@ namespace GameWorld
         {
             var entity = _world.NewEntity();
             ref var upgrade = ref _world.GetPool<Upgrade>().Add(entity);
+            
+            var upgradeStaticData = _staticDataService.GetUpgradeStaticData(upgradeFromSave.UpgradeId);
 
-            var upgradeStaticData = _staticDataService.ForUpgrade(upgradeFromSave.Id);
-
-            upgrade.Id = upgradeFromSave.Id;
+            upgrade.TypeId = upgradeFromSave.UpgradeId;
             upgrade.BusinessId = upgradeFromSave.BusinessId;
             upgrade.Unlocked = upgradeFromSave.Unlocked;
 
@@ -111,7 +109,7 @@ namespace GameWorld
             var upgradeObj = (GameObject) Object.Instantiate(prefab, businessNodeView.UpgradeRoot);
             var upgradeView = upgradeObj.GetComponent<UpgradeView>();
 
-            upgradeView.Id = upgradeFromSave.Id;
+            upgradeView.UpgradeId = upgradeFromSave.UpgradeId;
 
             upgradeView.Name.text = upgradeStaticData.Name;
             upgradeView.IncomeLabel.text = upgradeStaticData.IncomeLabel;

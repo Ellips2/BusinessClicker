@@ -69,7 +69,7 @@ namespace UI
 
                 ref var buyUpgradeEvent = ref _world.GetPool<BuyUpgradeEvent>().Add(index);
 
-                buyUpgradeEvent.Id = upgradeView.Id;
+                buyUpgradeEvent.TypeId = upgradeView.UpgradeId;
             }
         }
 
@@ -87,7 +87,7 @@ namespace UI
                 if (entityUpgrade.Unlocked)
                     continue;
 
-                if (upgradeView.Id == entityUpgrade.Id) _clickedPool.Add(index);
+                if (upgradeView.UpgradeId == entityUpgrade.TypeId) _clickedPool.Add(index);
             }
         }
 

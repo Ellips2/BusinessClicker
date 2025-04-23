@@ -5,7 +5,7 @@ namespace UI.UpgradeButton
 {
     internal class UpgradeView : MonoBehaviour
     {
-        public UpgradeId Id;
+        public UpgradeTypeId UpgradeId;
         public TextMeshProUGUI Name;
 
         public Transform IncomeTransform;

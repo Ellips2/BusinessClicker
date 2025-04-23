@@ -5,8 +5,8 @@ namespace UI
 {
     public class UiRoot : MonoBehaviour
     {
-        public Transform businessNodeContainer;
-        public GameObject scorePanel;
-        public EcsUguiEmitter uiEmitter;
+        public Transform BusinessNodeContainer;
+        public GameObject ScorePanel;
+        public EcsUguiEmitter UiEmitter;
     }
 }

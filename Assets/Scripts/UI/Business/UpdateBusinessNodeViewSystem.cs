@@ -10,6 +10,7 @@ namespace UI.Business
     {
         private readonly UiRoot _uiRoot;
         private readonly EcsWorld _world;
+        
         private ScoreView _balanceView;
         private EcsPool<BusinessNode> _businessNodePool;
         private List<BusinessNodeView> _businessNodeViewList;

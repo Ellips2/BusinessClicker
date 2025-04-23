@@ -6,7 +6,7 @@ namespace UI.UpgradeButton
     [Serializable]
     public struct UpgradeData
     {
-        public UpgradeId Id;
+        public UpgradeTypeId UpgradeId;
         public BusinessTypeId BusinessId;
         public bool Unlocked;
     }

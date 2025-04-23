@@ -15,10 +15,10 @@ namespace SaveLoad
 
         private Dictionary<BusinessTypeId, BusinessStaticData> _businesses;
         private ScoreStaticData _scoreStaticData;
-        private Dictionary<UpgradeId, UpgradeStaticData> _upgrades;
+        private Dictionary<UpgradeTypeId, UpgradeStaticData> _upgrades;
 
 
-        public void Load()
+        public void LoadStaticData()
         {
             _businesses = Resources
                 .LoadAll<BusinessStaticData>(BusinessesPath)
@@ -26,31 +26,31 @@ namespace SaveLoad
 
             _upgrades = Resources
                 .LoadAll<UpgradeStaticData>(UpgradesPath)
-                .ToDictionary(x => x.Id, x => x);
+                .ToDictionary(x => x.UpgradeId, x => x);
 
             _scoreStaticData = Resources.Load<ScoreStaticData>(ScorePath);
         }
 
-        public BusinessStaticData ForBusiness(BusinessTypeId businessNodeId)
+        public BusinessStaticData GetBusinessStaticData(BusinessTypeId businessNodeId)
         {
             return _businesses.TryGetValue(businessNodeId, out var staticData)
                 ? staticData
                 : null;
         }
 
-        public ScoreStaticData ForScore()
+        public ScoreStaticData GetScoreStaticData()
         {
             return _scoreStaticData;
         }
 
-        public UpgradeStaticData ForUpgrade(UpgradeId upgradeId)
+        public UpgradeStaticData GetUpgradeStaticData(UpgradeTypeId upgradeTypeId)
         {
-            return _upgrades.TryGetValue(upgradeId, out var staticData)
+            return _upgrades.TryGetValue(upgradeTypeId, out var staticData)
                 ? staticData
                 : null;
         }
 
-        public List<UpgradeStaticData> ForUpgrades(BusinessTypeId businessTypeId)
+        public List<UpgradeStaticData> GetUpgradeStaticDataList(BusinessTypeId businessTypeId)
         {
             var upgradeStaticDataList = new List<UpgradeStaticData>();
             foreach (var upgradeStaticData in _upgrades.Values)

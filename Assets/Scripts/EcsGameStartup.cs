@@ -49,15 +49,13 @@ internal class EcsStartup : MonoBehaviour
 
     private void InitServices()
     {
-        _uiEmitter = uiRoot.uiEmitter;
-        _staticDataService = new StaticDataService();
-        _staticDataService.Load();
+        _uiEmitter = uiRoot.UiEmitter;
         
+        _staticDataService = new StaticDataService();
+        _staticDataService.LoadStaticData();
 
         _saveLoadService = new SaveLoadService(_staticDataService);
-        _playerProgress =
-            _saveLoadService.Load()
-            ?? _saveLoadService.NewProgress();
+        _playerProgress = _saveLoadService.LoadProgress() ?? _saveLoadService.NewProgress();
 
         _factory = new GameFactory(_world, uiRoot, _playerProgress, _staticDataService);
     }

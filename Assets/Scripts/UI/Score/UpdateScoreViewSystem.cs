@@ -23,7 +23,7 @@ namespace UI.Score
         public void Init(IEcsSystems systems)
         {
             _filter = _world.Filter<UpdateComponentViewEvent>().End();
-            _scoreView = _uiRoot.scorePanel.GetComponentInChildren<ScoreView>();
+            _scoreView = _uiRoot.ScorePanel.GetComponentInChildren<ScoreView>();
         }
 
         public void Run(IEcsSystems systems)

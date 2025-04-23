@@ -6,7 +6,7 @@ namespace UI.UpgradeButton
     [CreateAssetMenu(fileName = "UpgradeStaticData", menuName = "Static Data/Upgrade")]
     public class UpgradeStaticData : ScriptableObject
     {
-        public UpgradeId Id;
+        public UpgradeTypeId UpgradeId;
         public BusinessTypeId BusinessId;
         public string Name;
 

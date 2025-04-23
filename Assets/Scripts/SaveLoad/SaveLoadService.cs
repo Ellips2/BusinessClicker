@@ -22,7 +22,7 @@ namespace SaveLoad
             PlayerPrefs.SetString(ProgressKey, progress.ToJson());
         }
 
-        public PlayerProgress Load()
+        public PlayerProgress LoadProgress()
         {
             return PlayerPrefs.GetString(ProgressKey)?
                 .ToDeserialized<PlayerProgress>();
@@ -51,7 +51,7 @@ namespace SaveLoad
 
         private BusinessNodeData CreateDefaultBusinessNodeData(BusinessTypeId id)
         {
-            var businessStaticData = _staticDataService.ForBusiness(id);
+            var businessStaticData = _staticDataService.GetBusinessStaticData(id);
             var businessId = businessStaticData.Id;
             var defaultLevel = businessStaticData.DefaultLevel;
             var defaultPrice = businessStaticData.DefaultPrice;
@@ -71,13 +71,13 @@ namespace SaveLoad
 
         private List<UpgradeData> CreateDefaultUpgradeData(BusinessTypeId id)
         {
-            var upgradeStaticDataList = _staticDataService.ForUpgrades(id);
+            var upgradeStaticDataList = _staticDataService.GetUpgradeStaticDataList(id);
             var upgradeDataList = new List<UpgradeData>();
             foreach (var upgradeStaticData in upgradeStaticDataList)
             {
                 var upgradeData = new UpgradeData
                 {
-                    Id = upgradeStaticData.Id,
+                    UpgradeId = upgradeStaticData.UpgradeId,
                     BusinessId = upgradeStaticData.BusinessId,
                     Unlocked = false
                 };

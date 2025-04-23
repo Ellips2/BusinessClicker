@@ -11,6 +11,7 @@ namespace UI
     {
         private readonly UiRoot _uiRoot;
         private readonly EcsWorld _world;
+        
         private EcsFilter _businessNodeFilter;
         private List<BusinessNodeView> _businessNodeViewList;
         private EcsPool<IncomeTimer> _incomeTimerPool;

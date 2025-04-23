@@ -51,7 +51,7 @@ namespace UI.LevelUpButton
 
         private void LevelUpBusinessNode(ref BusinessNode businessNode)
         {
-            var businessStaticData = _staticDataService.ForBusiness(businessNode.Id);
+            var businessStaticData = _staticDataService.GetBusinessStaticData(businessNode.Id);
 
             businessNode.Level += 1;
             businessNode.LevelUpPrice = CalculateBusinessNodeLevelUpPrice(ref businessNode, businessStaticData);

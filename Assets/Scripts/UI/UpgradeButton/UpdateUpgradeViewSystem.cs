@@ -28,7 +28,7 @@ namespace UI.UpgradeButton
         public void Init(IEcsSystems systems)
         {
             _filter = _world.Filter<Upgrade>().Inc<Unlocked>().End();
-            _balanceView = _uiRoot.scorePanel.GetComponentInChildren<ScoreView>();
+            _balanceView = _uiRoot.ScorePanel.GetComponentInChildren<ScoreView>();
             _upgradeViewList = _uiRoot.GetComponentsInChildren<UpgradeView>().ToList();
             _upgradePool = _world.GetPool<Upgrade>();
         }
@@ -40,7 +40,7 @@ namespace UI.UpgradeButton
                 ref var upgrade = ref _upgradePool.Get(index);
 
                 foreach (var upgradeView in _upgradeViewList)
-                    if (upgradeView.Id == upgrade.Id)
+                    if (upgradeView.UpgradeId == upgrade.TypeId)
                     {
                         upgradeView.IncomeTransform.gameObject.SetActive(false);
                         upgradeView.PriceTransform.gameObject.SetActive(false);

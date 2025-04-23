@@ -4,7 +4,7 @@ namespace UI.UpgradeButton
 {
     public struct Upgrade
     {
-        public UpgradeId Id;
+        public UpgradeTypeId TypeId;
         public BusinessTypeId BusinessId;
         public bool Unlocked;
         public int Price;

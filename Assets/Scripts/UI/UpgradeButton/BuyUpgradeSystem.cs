@@ -12,6 +12,7 @@ namespace UI.UpgradeButton
         private readonly IGameFactory _factory;
         private readonly IStaticDataService _staticDataService;
         private readonly EcsWorld _world;
+        
         private EcsFilter _businessFilter;
         private EcsPool<BusinessNode> _businessPool;
         private EcsFilter _eventFilter;

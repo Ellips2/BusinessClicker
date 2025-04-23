@@ -23,7 +23,7 @@ namespace Utils
         public static float CalculateBusinessIncome(this ref BusinessNode businessNode,
             IStaticDataService staticDataService)
         {
-            var businessStaticData = staticDataService.ForBusiness(businessNode.Id);
+            var businessStaticData = staticDataService.GetBusinessStaticData(businessNode.Id);
 
             return businessNode.Level
                    * businessStaticData.DefaultIncome
